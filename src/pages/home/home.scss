@@ -1,3 +1,23 @@
 page-home {
+  .persuratan {
+    background-color: map-get($colors, "primary");
+    padding-top: 1vh;
+    h2,
+    p {
+      color: white;
+    }
+    ion-card-content {
+      padding: 0;
+    }
+  }
 
+  .icon-large {
+    font-size: 90px;
+    color: #eceff1;
+    opacity: 0.4;
+  }
+  .avatar {
+    text-align: center;
+    align-content: center;
+  }
 }
