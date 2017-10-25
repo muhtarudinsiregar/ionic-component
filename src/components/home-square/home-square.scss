@@ -1,0 +1,22 @@
+home-square {
+  // grid list menu
+  button {
+    background: #ffffff;
+    height: 110px;
+    color: #455b65;
+    font-size: 13px;
+    letter-spacing: 1px;
+  }
+  ion-col {
+    background: #fff;
+  }
+  .col {
+    border-right: 2px solid #f2f2f2;
+    border-bottom: 2px solid #f2f2f2;
+  }
+  ion-icon {
+    font-size: 30px;
+    padding-bottom: 10px;
+    color: map-get($colors, "blue-template") !important;
+  }
+}
