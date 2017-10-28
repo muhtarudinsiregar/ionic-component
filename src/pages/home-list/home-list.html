@@ -7,5 +7,6 @@
 </ion-header>
 
 <ion-content padding>
-  <home-square [item]="item"></home-square>
+  <home-square [items]="items" *ngIf="itemId == 0"></home-square>
+  <home-rectangular [items]="items" *ngIf="itemId == 1"></home-rectangular>
 </ion-content>

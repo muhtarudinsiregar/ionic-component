@@ -9,11 +9,11 @@
 
 <ion-content no-padding>
   <ion-list>
-    <button ion-item *ngFor="let item of items" (click)="itemTapped(item)">
-      <ion-icon [name]="item.icon" item-start></ion-icon>
-      {{item.title}}
+    <button ion-item *ngFor="let menu of menus" (click)="itemTapped(menu.id, items)">
+      <ion-icon [name]="menu?.icon" item-start></ion-icon>
+      {{menu.title}}
       <div class="item-note" item-end>
-        {{item.note}}
+        {{menu?.note}}
       </div>
     </button>
   </ion-list>

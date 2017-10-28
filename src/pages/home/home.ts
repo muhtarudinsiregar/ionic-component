@@ -1,27 +1,33 @@
 import { Component } from "@angular/core";
 import { NavController } from "ionic-angular";
 import { HomeListPage } from "../home-list/home-list";
+import { MenuConstant } from "../../constant/menu.constant";
 
 @Component({
   selector: "page-home",
   templateUrl: "home.html"
 })
 export class HomePage {
-  items: Array<{ title: string; icon: string; component: string }>;
+  items: Array<{
+    id: number;
+    title: string;
+    icon: string;
+    component: string;
+    color: string;
+  }>;
+  menus: Array<{
+    id: number;
+    title: string;
+    icon: string;
+  }>;
   constructor(public navCtrl: NavController) {}
 
   ionViewDidLoad() {
-    this.items = [
-      {
-        title: "Menu Square",
-        icon: "home",
-        component: "menu-square"
-      },
-      { title: "Menu Rectangular", icon: "home", component: "home-rectangular" }
-    ];
+    this.menus = MenuConstant.getMenuHome();
+    this.items = MenuConstant.getMenus();
   }
 
-  itemTapped(item: any) {
-    this.navCtrl.push(HomeListPage, { item: item });
+  itemTapped(itemId: number, items: any) {
+    this.navCtrl.push(HomeListPage, { itemId: itemId, items: this.items });
   }
 }

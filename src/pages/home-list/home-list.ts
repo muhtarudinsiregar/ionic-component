@@ -14,11 +14,12 @@ import { IonicPage, NavController, NavParams } from "ionic-angular";
   templateUrl: "home-list.html"
 })
 export class HomeListPage {
-  item: any;
+  items: any;
+  itemId: number;
   constructor(public navCtrl: NavController, public navParams: NavParams) {}
 
   ionViewDidLoad() {
-    this.item = this.navParams.get("item");
-    console.log(this.item);
+    this.itemId = this.navParams.get("itemId");
+    this.items = this.navParams.get("items");
   }
 }
