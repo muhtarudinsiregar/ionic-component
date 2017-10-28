@@ -1,29 +1,11 @@
 <ion-grid class="grid" no-padding>
   <ion-row class="row">
-    <ion-col col-4 text-center class="col">
+    <ion-col col-4 text-center class="col" *ngFor="let item of items">
       <button>
         <ion-icon color="primary" [name]="item?.icon" role="img"></ion-icon>
         <br> {{item?.title}}
 
       </button>
     </ion-col>
-
-    <ion-col col-4 text-center class="col">
-      <button>
-        <ion-icon color="primary" [name]="item?.icon" role="img"></ion-icon>
-        <br> {{item?.title}}
-
-      </button>
-    </ion-col>
-
-    <ion-col col-4 text-center class="col">
-      <button>
-        <ion-icon color="primary" [name]="item?.icon" role="img"></ion-icon>
-        <br> {{item?.title}}
-
-      </button>
-    </ion-col>
-
-
   </ion-row>
 </ion-grid>

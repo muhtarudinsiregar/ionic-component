@@ -5,7 +5,8 @@ import { Component, Input } from "@angular/core";
   templateUrl: "home-square.html"
 })
 export class HomeSquareComponent {
-  text: string;
-  @Input() item: any;
-  constructor() {}
+  @Input() items: any;
+  constructor() {
+    console.log(this.items);
+  }
 }
