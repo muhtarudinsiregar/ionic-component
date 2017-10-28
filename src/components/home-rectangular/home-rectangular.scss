@@ -1,3 +1,91 @@
 home-rectangular {
+  $transparent: transparent;
 
+  ion-content {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .toolbar-logo {
+    width: auto;
+    max-width: 18em;
+  }
+
+  ion-icon {
+    font-size: 100px;
+    padding-bottom: 10px;
+    color: map-get($colors, "blue-template") !important;
+  }
+
+  .menu-logo {
+    font-size: 7rem !important;
+    color: whitesmoke !important;
+    opacity: 0.5;
+  }
+  .content-home {
+    margin-top: 3vh;
+  }
+
+  // upper avatar
+  .avatar-center {
+    display: flex;
+    flex-direction: column; /* align flex items vertically */
+    justify-content: center; /* center items vertically, in this case */
+    align-items: center; /* center single-line items horizontally, in this case */
+    align-content: center; /* center multi-line items horizontally, in this case */
+  }
+
+  // header
+  .toolbar-content,
+  span {
+    color: white;
+  }
+  .toolbar-background,
+  ion-navbar,
+  ion-header {
+    background: $transparent !important;
+    background-color: $transparent !important;
+  }
+  .header-md::after,
+  .toolbar-background-ios {
+    background-image: none;
+    border-bottom: 0;
+  }
+
+  // avatar
+  .avatar-item {
+    background-color: $transparent !important;
+    background: $transparent !important;
+    border-bottom: 0 !important;
+
+    .title {
+      font-weight: bold;
+    }
+  }
+
+  // left content item
+  .left-content {
+    height: 50px;
+    width: 50px;
+    background-color: red !important;
+    border-radius: 50%;
+    border: 1px solid white !important;
+
+    .img-content {
+      opacity: 0.4 !important;
+    }
+
+    .avatar-content {
+      position: absolute;
+      top: 3.6rem;
+      left: 2.2rem;
+      font-weight: bold;
+    }
+  }
+
+  // menu bottom text
+  .menu-bottom-text {
+    font-weight: bold;
+  }
 }

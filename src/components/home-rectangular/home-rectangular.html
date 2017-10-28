@@ -1,4 +1,20 @@
-<!-- Generated template for the HomeRectangularComponent component -->
-<div>
-  {{text}}
-</div>
+<ion-card (click)="pagesTo(item?.component)" *ngFor="let item of items">
+  <ion-item [color]="item?.color">
+    <div item-start class="left-content">
+      <!-- <img [src]="assets(item?.iconSmall)" [name]="item?.iconSmall" class="img-content"> -->
+      <span class="avatar-content" text-center ion-text>1000</span>
+    </div>
+
+
+    <h6 ion-text text-wrap color="light">{{item?.subtitle}}</h6>
+
+    <div item-end>
+      <ion-icon [name]="item?.icon" item-end class="item-logo" no-margin></ion-icon>
+    </div>
+
+  </ion-item>
+
+  <ion-item color="light">
+    <h2 ion-text item-end text-uppercase [color]="item?.color" class="item-bottom-text">{{item?.title}}</h2>
+  </ion-item>
+</ion-card>
