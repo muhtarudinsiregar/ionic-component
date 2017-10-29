@@ -11,6 +11,7 @@ import { SplashScreen } from "@ionic-native/splash-screen";
 
 import { CalendarPageModule } from "../pages/calendar/calendar.module";
 import { HomeListPageModule } from "../pages/home-list/home-list.module";
+import { ChartPageModule } from "../pages/chart/chart.module";
 
 @NgModule({
   declarations: [MyApp, HomePage, ListPage],
@@ -18,7 +19,8 @@ import { HomeListPageModule } from "../pages/home-list/home-list.module";
     BrowserModule,
     IonicModule.forRoot(MyApp),
     CalendarPageModule,
-    HomeListPageModule
+    HomeListPageModule,
+    ChartPageModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [MyApp, HomePage, ListPage],

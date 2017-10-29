@@ -122,6 +122,16 @@
     localforage "~1.4.2"
     localforage-cordovasqlitedriver "~1.5.0"
 
+"@types/geojson@*":
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/@types/geojson/-/geojson-1.0.5.tgz#ef9f12277233399c7f32086818a56a84c8952f8f"
+
+"@types/highcharts@^4.2.1":
+  version "4.2.57"
+  resolved "https://registry.yarnpkg.com/@types/highcharts/-/highcharts-4.2.57.tgz#f756907fc1756c3148a6226efabd3520a8929db9"
+  dependencies:
+    "@types/geojson" "*"
+
 "@types/localforage@0.0.30":
   version "0.0.30"
   resolved "https://registry.yarnpkg.com/@types/localforage/-/localforage-0.0.30.tgz#3d60a6bf6dda38e3f8a469611598379f1f649509"
@@ -1537,6 +1547,10 @@ hawk@~6.0.2:
     hoek "4.x.x"
     sntp "2.x.x"
 
+highcharts@4.x.x:
+  version "4.2.7"
+  resolved "https://registry.yarnpkg.com/highcharts/-/highcharts-4.2.7.tgz#45cbed8e99c9c042e95f9c51076726496f686862"
+
 hmac-drbg@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/hmac-drbg/-/hmac-drbg-1.0.1.tgz#d2745701025a6c775a6c545793ed502fc0c649a1"
@@ -2240,6 +2254,12 @@ nan@^2.3.0, nan@^2.3.2:
 negotiator@0.6.1:
   version "0.6.1"
   resolved "https://registry.yarnpkg.com/negotiator/-/negotiator-0.6.1.tgz#2b327184e8992101177b28563fb5e7102acd0ca9"
+
+ng2-highcharts@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/ng2-highcharts/-/ng2-highcharts-1.0.0.tgz#9ba507c86598efa113e6dd0de232773171d4bfe2"
+  dependencies:
+    "@types/highcharts" "^4.2.1"
 
 node-gyp@^3.3.1:
   version "3.6.2"
