@@ -1,14 +1,10 @@
 List example ionic component with other packages
 ## To Do
-* [ ] chartJS
+* [x] chartJS
 
 * [x] ng2-highchart
 
 * [x] calendar
-
-* [ ] FCM
-
-* [ ] Tagging
 
 * [x] Menu Homescreen
 
