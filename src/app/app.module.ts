@@ -13,6 +13,7 @@ import { CalendarPageModule } from "../pages/calendar/calendar.module";
 import { HomeListPageModule } from "../pages/home-list/home-list.module";
 import { ChartPageModule } from "../pages/chart/chart.module";
 import { ChartListPageModule } from "../pages/chart-list/chart-list.module";
+import { ChartsModule } from "ng2-charts/ng2-charts";
 
 @NgModule({
   declarations: [MyApp, HomePage, ListPage],
@@ -22,7 +23,8 @@ import { ChartListPageModule } from "../pages/chart-list/chart-list.module";
     CalendarPageModule,
     HomeListPageModule,
     ChartPageModule,
-    ChartListPageModule
+    ChartListPageModule,
+    ChartsModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [MyApp, HomePage, ListPage],
