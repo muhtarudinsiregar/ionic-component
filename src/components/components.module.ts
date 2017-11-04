@@ -6,6 +6,10 @@ import { HighchartComponent } from "./highchart/highchart";
 import { Ng2HighchartsModule } from "ng2-highcharts";
 import { ChartjsComponent } from "./chartjs/chartjs";
 import { ChartsModule } from "ng2-charts/ng2-charts";
+import { DatepickerComponent } from "./datepicker/datepicker";
+import { DatePicker } from "@ionic-native/date-picker";
+import { DatepickerJsComponent } from "./datepicker-js/datepicker-js";
+import { DatePickerModule } from "ionic3-datepicker";
 
 @NgModule({
   declarations: [
@@ -13,15 +17,20 @@ import { ChartsModule } from "ng2-charts/ng2-charts";
     HomeRectangularComponent,
     HighchartComponent,
     HighchartComponent,
-    ChartjsComponent
+    ChartjsComponent,
+    DatepickerComponent,
+    DatepickerJsComponent
   ],
-  imports: [IonicModule, Ng2HighchartsModule, ChartsModule],
+  providers: [DatePicker],
+  imports: [IonicModule, Ng2HighchartsModule, ChartsModule, DatePickerModule],
   exports: [
     HomeSquareComponent,
     HomeRectangularComponent,
     HighchartComponent,
     HighchartComponent,
-    ChartjsComponent
+    ChartjsComponent,
+    DatepickerComponent,
+    DatepickerJsComponent
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
