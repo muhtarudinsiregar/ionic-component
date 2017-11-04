@@ -15,6 +15,7 @@ import { ChartPageModule } from "../pages/chart/chart.module";
 import { ChartListPageModule } from "../pages/chart-list/chart-list.module";
 import { ChartsModule } from "ng2-charts/ng2-charts";
 import { DatepickerPageModule } from "../pages/datepicker/datepicker.module";
+import { DatepickerListPageModule } from "../pages/datepicker-list/datepicker-list.module";
 
 @NgModule({
   declarations: [MyApp, HomePage, ListPage],
@@ -26,7 +27,8 @@ import { DatepickerPageModule } from "../pages/datepicker/datepicker.module";
     ChartPageModule,
     ChartListPageModule,
     ChartsModule,
-    DatepickerPageModule
+    DatepickerPageModule,
+    DatepickerListPageModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [MyApp, HomePage, ListPage],

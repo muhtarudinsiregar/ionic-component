@@ -1,25 +1,21 @@
-import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { Component } from "@angular/core";
+import { NavController } from "ionic-angular";
+import { DatepickerListPage } from "../datepicker-list/datepicker-list";
+import { DatepickerConstant } from "../../constant/datepicker.constant";
 
-/**
- * Generated class for the DatepickerPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
-
-@IonicPage()
 @Component({
-  selector: 'page-datepicker',
-  templateUrl: 'datepicker.html',
+  selector: "page-datepicker",
+  templateUrl: "datepicker.html"
 })
 export class DatepickerPage {
-
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
-  }
+  menus: any = "";
+  constructor(private navCtrl: NavController) {}
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad DatepickerPage');
+    this.menus = DatepickerConstant.getList();
   }
 
+  itemTapped(menuData) {
+    this.navCtrl.push(DatepickerListPage, { menuData: menuData });
+  }
 }
