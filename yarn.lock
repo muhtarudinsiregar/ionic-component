@@ -71,6 +71,10 @@
   version "4.3.2"
   resolved "https://registry.yarnpkg.com/@ionic-native/core/-/core-4.3.2.tgz#b2e9acd5a4c961c64d786a9b4dc0c2194389efcd"
 
+"@ionic-native/date-picker@^4.3.3":
+  version "4.3.3"
+  resolved "https://registry.yarnpkg.com/@ionic-native/date-picker/-/date-picker-4.3.3.tgz#3c673caa2fad666680ebbb63aba93fa32b6d753f"
+
 "@ionic-native/splash-screen@4.3.2":
   version "4.3.2"
   resolved "https://registry.yarnpkg.com/@ionic-native/splash-screen/-/splash-screen-4.3.2.tgz#4120680e24fa6d0d455800deaf18534d3033aa3a"
@@ -753,7 +757,7 @@ cookie@0.3.1:
   version "0.3.1"
   resolved "https://registry.yarnpkg.com/cookie/-/cookie-0.3.1.tgz#e7e0a1f9ef43b4c8ba925c5c5a96e806d16873bb"
 
-cordova-android@6.3.0:
+cordova-android@^6.3.0:
   version "6.3.0"
   resolved "https://registry.yarnpkg.com/cordova-android/-/cordova-android-6.3.0.tgz#da5418433d25c75a5977b428244bbe437d0128d2"
   dependencies:
@@ -782,6 +786,10 @@ cordova-common@^2.1.0:
     shelljs "^0.5.3"
     underscore "^1.8.3"
     unorm "^1.3.3"
+
+cordova-plugin-datepicker@^0.9.3:
+  version "0.9.3"
+  resolved "https://registry.yarnpkg.com/cordova-plugin-datepicker/-/cordova-plugin-datepicker-0.9.3.tgz#2558a9ce5998f6d6dc06cf92fd8bbb9d0901f16a"
 
 cordova-plugin-device@^1.1.4:
   version "1.1.6"
@@ -1703,6 +1711,10 @@ ionic-plugin-keyboard@^2.2.1:
 ionic2-calendar@^0.3.11:
   version "0.3.11"
   resolved "https://registry.yarnpkg.com/ionic2-calendar/-/ionic2-calendar-0.3.11.tgz#9bb3de60372394a0305d766720995448619bf023"
+
+ionic3-datepicker@^2.5.1:
+  version "2.5.1"
+  resolved "https://registry.yarnpkg.com/ionic3-datepicker/-/ionic3-datepicker-2.5.1.tgz#d1c28c09386e1901726ccdad92602a7db991cf10"
 
 ionicons@3.0.0:
   version "3.0.0"
