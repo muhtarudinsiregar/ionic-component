@@ -1,25 +1,21 @@
-import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { Component } from "@angular/core";
+import { NavController } from "ionic-angular";
+import { TimelineConstant } from "../../constant/timeline.constant";
+import { TimelineListPage } from "../timeline-list/timeline-list";
 
-/**
- * Generated class for the TimelinePage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
-
-@IonicPage()
 @Component({
-  selector: 'page-timeline',
-  templateUrl: 'timeline.html',
+  selector: "page-timeline",
+  templateUrl: "timeline.html"
 })
 export class TimelinePage {
-
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
-  }
+  menus: any = "";
+  constructor(private navCtrl: NavController) {}
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad TimelinePage');
+    this.menus = TimelineConstant.getMenus();
   }
 
+  itemTapped(menuData) {
+    this.navCtrl.push(TimelineListPage, { menuData: menuData });
+  }
 }

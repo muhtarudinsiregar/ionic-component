@@ -7,6 +7,7 @@ import { HomePage } from "../pages/home/home";
 import { CalendarPage } from "../pages/calendar/calendar";
 import { ChartPage } from "../pages/chart/chart";
 import { DatepickerPage } from "../pages/datepicker/datepicker";
+import { TimelinePage } from "../pages/timeline/timeline";
 
 @Component({
   templateUrl: "app.html"
@@ -30,7 +31,8 @@ export class MyApp {
       { title: "Home", component: HomePage },
       { title: "Calendar", component: CalendarPage },
       { title: "Chart", component: ChartPage },
-      { title: "Datepicker", component: DatepickerPage }
+      { title: "Datepicker", component: DatepickerPage },
+      { title: "Timeline", component: TimelinePage }
     ];
   }
 
