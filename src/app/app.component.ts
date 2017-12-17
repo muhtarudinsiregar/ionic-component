@@ -32,7 +32,8 @@ export class MyApp {
       { title: "Calendar", component: CalendarPage },
       { title: "Chart", component: ChartPage },
       { title: "Datepicker", component: DatepickerPage },
-      { title: "Timeline", component: TimelinePage }
+      { title: "Timeline", component: TimelinePage },
+      { title: "Fullcalendar", component: "FullcalendarPage" }
     ];
   }
 
