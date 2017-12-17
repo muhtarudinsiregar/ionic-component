@@ -9,9 +9,11 @@ List example ionic component with other packages
 
 * [x] Menu Homescreen
 
-* [] Datepicker (native / js)
+* [x] Datepicker (native / js)
 
-* [] Vertical Timeline
+* [x] Vertical Timeline
+
+* [x] Fullcalendar
 
 ## References
 * Thanks to [Ionic2 calendar tutorial from codeexpertz](https://www.codeexpertz.com/blog/mobile/ionic-2-calendar)
