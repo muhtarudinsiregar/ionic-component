@@ -15,6 +15,13 @@ List example ionic component with other packages
 
 * [x] Fullcalendar
 
+
+## Packages
+* https://github.com/lbertenasco/ap-ng2-fullcalendar
+* https://github.com/Bigous/ng2-highcharts
+* https://github.com/twinssbc/Ionic2-Calendar
+* https://github.com/TechGapItalia/angular-vertical-timeline
+
 ## References
 * Thanks to [Ionic2 calendar tutorial from codeexpertz](https://www.codeexpertz.com/blog/mobile/ionic-2-calendar)
 
