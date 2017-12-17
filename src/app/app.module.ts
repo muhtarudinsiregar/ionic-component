@@ -18,7 +18,7 @@ import { DatepickerPageModule } from "../pages/datepicker/datepicker.module";
 import { DatepickerListPageModule } from "../pages/datepicker-list/datepicker-list.module";
 import { TimelinePageModule } from "../pages/timeline/timeline.module";
 import { TimelineListPageModule } from "../pages/timeline-list/timeline-list.module";
-
+import { CalendarModule } from "ap-angular2-fullcalendar";
 @NgModule({
   declarations: [MyApp, HomePage, ListPage],
   imports: [
@@ -32,7 +32,8 @@ import { TimelineListPageModule } from "../pages/timeline-list/timeline-list.mod
     DatepickerPageModule,
     DatepickerListPageModule,
     TimelinePageModule,
-    TimelineListPageModule
+    TimelineListPageModule,
+    CalendarModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [MyApp, HomePage, ListPage],
